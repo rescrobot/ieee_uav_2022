@@ -107,7 +107,8 @@ $ echo "export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$(pwd)/drone_models" >> ~/.b
 $ source ~/.bashrc
 
 $ cd ..
-$ catkin build -DCMAKE_BUILD_TYPE=Release
+$ catkin build -j8 -l4 --cmake-args -DCMAKE_BUILD_TYPE=Release
+
 ~~~
 
 
