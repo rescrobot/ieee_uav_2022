@@ -21,8 +21,8 @@
   + with the options below
 ~~~makefile
 $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
-      -D CMAKE_C_COMPILER=gcc-6 \
-      -D CMAKE_CXX_COMPILER=g++-6 \
+      -D CMAKE_C_COMPILER=gcc-8 \
+      -D CMAKE_CXX_COMPILER=g++-8 \
       -D CMAKE_INSTALL_PREFIX=/usr/local \
       -D OPENCV_GENERATE_PKGCONFIG=YES \
       -D WITH_CUDA=ON \
