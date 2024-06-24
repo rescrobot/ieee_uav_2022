@@ -144,6 +144,7 @@ add /distance/data
 
 + Launch Gazebo world
 ~~~shell
+$ source devel/setup.bash
 $ roslaunch ieee_uav trial1.launch
 
 or
