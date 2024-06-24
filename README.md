@@ -92,6 +92,8 @@ $ source ~/.bashrc
 	~~~shell
 	$ cd ieee_uav_2022/ma27-1.0.0
 	$ ./configure
+ 	$ autoreconf --install --force --verbose
+	$ sudo apt-get install -y autoconf automake libtool
 	$ make
 	$ sudo make install
 	~~~
