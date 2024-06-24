@@ -112,6 +112,8 @@ $ echo "export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$(pwd)/drone_models" >> ~/.b
 $ source ~/.bashrc
 
 $ cd ..
+$ ln -s /home/res/drone_gazebo_ws2/ieee_uav_2022/ieee_uav ieee_uav
+$ ln -s /home/res/drone_gazebo_ws2/ieee_uav_2022/YOLO yolo_ros_simple
 $ catkin build -j8 -l4 --cmake-args -DCMAKE_BUILD_TYPE=Release
 
 ~~~
