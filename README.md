@@ -57,6 +57,7 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 
 $ conda create -n $env name$ -python=3.8
 $ conda activate $env name$
+$ pip install rospkg rosdep rosinstall_generator wstool
 $ git clone --recursive https://github.com/engcang/ieee_uav_2022
 ~~~
 
