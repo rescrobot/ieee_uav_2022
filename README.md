@@ -115,6 +115,7 @@ $ source ~/.bashrc
 $ cd ..
 $ ln -s /home/res/drone_gazebo_ws2/ieee_uav_2022/ieee_uav ieee_uav
 $ ln -s /home/res/drone_gazebo_ws2/ieee_uav_2022/YOLO yolo_ros_simple
+($ pip install empy==3.3.4)
 $ catkin build -j8 -l4 --cmake-args -DCMAKE_BUILD_TYPE=Release
 
 ~~~
