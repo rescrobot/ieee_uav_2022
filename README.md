@@ -57,7 +57,9 @@ $ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 
 $ conda create -n $env name$ -python=3.8
 $ conda activate $env name$
+
 $ pip install rospkg rosdep rosinstall_generator wstool
+$ mkdir uav_nav_ws/src && cd uav_nav_ws/src
 $ git clone --recursive https://github.com/engcang/ieee_uav_2022
 ~~~
 
@@ -112,9 +114,7 @@ $ cd ieee_uav_2022/
 $ echo "export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$(pwd)/drone_models" >> ~/.bashrc
 $ source ~/.bashrc
 
-$ cd ..
-$ ln -s /home/res/drone_gazebo_ws2/ieee_uav_2022/ieee_uav ieee_uav
-$ ln -s /home/res/drone_gazebo_ws2/ieee_uav_2022/YOLO yolo_ros_simple
+$ cd ~/uav_nav_ws
 ($ pip install empy==3.3.4)
 $ catkin build -j8 -l4 --cmake-args -DCMAKE_BUILD_TYPE=Release
 
